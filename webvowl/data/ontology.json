@@ -1,0 +1,1295 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "es", "undefined" ],
+    "baseIris" : [ "https://ontologia.segittur.es/turismo/def/core", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://ontologia.segittur.es/enoturismo/def/core", "http://purl.obolibrary.org/obo/foodon.owl", "http://purl.org/ceu/ebaco/core", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://xmlns.com/foaf/0.1" ],
+    "title" : {
+      "en" : "Enotourism Ontology",
+      "es" : "Ontología de Enoturismo"
+    },
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#",
+    "version" : "1.0",
+    "author" : [ "Juan Manuel Cardeñosa Borrego", "Adrián Racero Serrano" ],
+    "description" : {
+      "en" : "Extend the SEGITTUR ontology with a enotourism ontology for a group project in the UPM's Ontological Engineering course.",
+      "es" : "Ampliar la ontología de SEGITTUR con una ontología de enoturismo para un trabajo en grupo de la asignatura Ingeniería Ontológica de la UPM"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Adrián Racero Serrano",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Juan Manuel Cardeñosa Borrego",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-11-14",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Enotourism Ontology",
+        "type" : "label"
+      }, {
+        "identifier" : "title",
+        "language" : "es",
+        "value" : "Ontología de Enoturismo",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://xmlns.com/foaf/0.1/Agent",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Agent",
+      "undefined" : "Agent"
+    },
+    "attributes" : [ "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#Event",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "undefined" : "Event"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#Vineyard",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vineyard",
+      "undefined" : "Vineyard"
+    },
+    "comment" : {
+      "en" : "Land dedicated to the cultivation of grapevines for the production of wine grapes.",
+      "es" : "Terreno dedicado al cultivo de vides destinado a la producción de uvas para la elaboración de vino."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "13" ]
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#Certification",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Certification",
+      "undefined" : "Certification"
+    },
+    "subClasses" : [ "19" ],
+    "attributes" : [ "external" ],
+    "id" : "17",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#TourismDestination",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TourismDestination",
+      "undefined" : "Tourism Destination"
+    },
+    "subClasses" : [ "30" ],
+    "attributes" : [ "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#Municipality",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Municipality",
+      "undefined" : "Municipality"
+    },
+    "comment" : {
+      "en" : "Geographical area encompassing a local community.",
+      "es" : "Área geográfica que abarca una comunidad local."
+    },
+    "id" : "38"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#Tasting",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tasting",
+      "undefined" : "Tasting"
+    },
+    "comment" : {
+      "en" : "Gastronomic experience that pairs wine and food to highlight and balance their flavors and aromas.",
+      "es" : "Experiencia gastronómica que combina vino y comida para resaltar y equilibrar sus sabores y aromas."
+    },
+    "id" : "26",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#AgritourismFacility",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AgritourismFacility",
+      "undefined" : "Agritourism Facility"
+    },
+    "subClasses" : [ "15", "12" ],
+    "attributes" : [ "external" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "40", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#Rating",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventOrganisationCompany",
+      "undefined" : "Event Organisation Company"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://purl.org/ceu/ebaco/core#Wine",
+    "baseIri" : "http://purl.org/ceu/ebaco/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wine",
+      "undefined" : "Wine"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineFestivalActivity",
+      "undefined" : "Wine Festival Activity"
+    },
+    "comment" : {
+      "en" : "Specific action or event within a wine festival that promotes participation and enjoyment centered around wine.",
+      "es" : "Acción o evento específico que forma parte de un festival del vino y que promueve la participación y el disfrute en torno al vino."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MuseumVisit",
+      "undefined" : "Museum Visit"
+    },
+    "comment" : {
+      "en" : "Tourist experience involving a visit to a museum related to wine culture, history, or heritage.",
+      "es" : "Experiencia turística que consiste en la visita a un museo relacionado con la cultura, historia o patrimonio del vino."
+    },
+    "id" : "11",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#Museum",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Museum",
+      "undefined" : "Museum"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#DOP",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DOP",
+      "undefined" : "D O P"
+    },
+    "comment" : {
+      "en" : "Officially recognized geographical area where wine production and processing are regulated to ensure origin and quality.",
+      "es" : "Zona geográfica reconocida oficialmente donde la producción y elaboración del vino están reguladas para garantizar su origen y calidad."
+    },
+    "id" : "19",
+    "superClasses" : [ "17" ]
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#AgritourismExperience",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AgritourismExperience",
+      "undefined" : "Agritourism Experience"
+    },
+    "subClasses" : [ "26", "24", "11", "6" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#WineMuseum",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineMuseum",
+      "undefined" : "Wine Museum"
+    },
+    "comment" : {
+      "en" : "Exhibition space dedicated to preserving and promoting the history, culture, and heritage of wine.",
+      "es" : "Espacio expositivo dedicado a la conservación y divulgación de la historia, cultura y patrimonio del vino."
+    },
+    "id" : "15",
+    "superClasses" : [ "13", "16" ]
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#WineRoute",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineRoute",
+      "undefined" : "Wine Route"
+    },
+    "comment" : {
+      "en" : "Group of wineries and services that are part of a wine-producing area.",
+      "es" : "Conjunto de bodegas y servicios que forman parte de una zona vitivinícola."
+    },
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/foodon.owl#PreparedFoodProduct",
+    "baseIri" : "http://purl.obolibrary.org/obo/foodon.owl",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PreparedFoodProduct",
+      "undefined" : "Prepared Food Product"
+    },
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineFoodSample",
+      "undefined" : "Wine Food Sample"
+    },
+    "comment" : {
+      "en" : "Small serving of wine and food offered together to taste and appreciate their combination of flavors.",
+      "es" : "Pequeña ración de vino y alimento ofrecida conjuntamente para degustar y apreciar su combinación de sabores."
+    },
+    "id" : "42"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#WineTasting",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineTasting",
+      "undefined" : "Wine Tasting"
+    },
+    "comment" : {
+      "en" : "Activity in which participants taste different wines to analyze their sensory properties and quality.",
+      "es" : "Actividad en la que los participantes degustan distintos vinos para analizar sus propiedades sensoriales y de calidad."
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#Acknowledgement",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Acknowledgement",
+      "undefined" : "Acknowledgement"
+    },
+    "subClasses" : [ "51", "17" ],
+    "attributes" : [ "external" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#WineSample",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineSample",
+      "undefined" : "Wine Sample"
+    },
+    "comment" : {
+      "en" : "Small amount of wine offered for tasting and evaluating its sensory characteristics.",
+      "es" : "Pequeña cantidad de vino ofrecida para degustar y evaluar sus características sensoriales."
+    },
+    "id" : "45"
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#TourismOrganisation",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TourismOrganisation",
+      "undefined" : "Tourism Organisation"
+    },
+    "subClasses" : [ "21" ],
+    "attributes" : [ "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EnotourismDestination",
+      "undefined" : "Enotourism Destination"
+    },
+    "comment" : {
+      "en" : "Place or region offering tourist experiences related to the culture, production, and enjoyment of wine.",
+      "es" : "Lugar o región que ofrece experiencias turísticas vinculadas a la cultura, producción y disfrute del vino."
+    },
+    "id" : "30",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VineyardVisit",
+      "undefined" : "Vineyard Visit"
+    },
+    "comment" : {
+      "en" : "Tourist activity involving a tour of vineyards to learn about grape cultivation and the wine production environment.",
+      "es" : "Actividad turística que consiste en recorrer viñedos para conocer el cultivo de la vid y el entorno de producción del vino."
+    },
+    "id" : "24",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "38", "9", "33", "40", "19" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#Winery",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Winery",
+      "undefined" : "Winery"
+    },
+    "comment" : {
+      "en" : "Facility where wines are produced, stored, and often offered for tasting or sale.",
+      "es" : "Establecimiento donde se elaboran, almacenan y, a menudo, se ofrecen vinos para degustación o venta."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21",
+    "superClasses" : [ "36", "22" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#WineStall",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineStall",
+      "undefined" : "Wine Stall"
+    },
+    "comment" : {
+      "en" : "Booth or stand where wines are offered for tasting or sale during events or festivals.",
+      "es" : "Puesto o stand donde se ofrecen vinos para degustación o venta durante eventos o festivales."
+    },
+    "id" : "33"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#WineFestival",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WineFestival",
+      "undefined" : "Wine Festival"
+    },
+    "comment" : {
+      "en" : "Public event celebrating wine culture through tastings, cultural activities, and social gatherings.",
+      "es" : "Evento público que celebra la cultura del vino mediante degustaciones, actividades culturales y encuentros sociales."
+    },
+    "id" : "2",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#Role",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role",
+      "undefined" : "Role"
+    },
+    "id" : "9"
+  } ],
+  "property" : [ {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "81",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "84",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#composedOf",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "composedOf",
+      "undefined" : "composed of"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#realizedBy",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "realizedBy",
+      "undefined" : "realized by"
+    },
+    "domain" : "9",
+    "attributes" : [ "object" ],
+    "id" : "8"
+  }, {
+    "range" : "7",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "10"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "22",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "7",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "range" : "7",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#offers",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "offers",
+      "undefined" : "offers"
+    },
+    "domain" : "13",
+    "attributes" : [ "external", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "13",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "18",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#id",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "id"
+    },
+    "domain" : "33",
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "range" : "36",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#belongsTo",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "belongsTo",
+      "undefined" : "belongs to"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#usesFood",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "usesFood",
+      "undefined" : "uses food"
+    },
+    "domain" : "42",
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#hasNextWineSample",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasNextWineSample",
+      "undefined" : "has next wine sample"
+    },
+    "domain" : "45",
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#regulatoryCouncil",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "regulatoryCouncil"
+    },
+    "domain" : "19",
+    "comment" : {
+      "es" : "Nombre del Consejo Regulador.",
+      "undefined" : "Name of the Regulatory Council."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "range" : "29",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "17",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "18",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#hasWineSample",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "hasWineSample",
+      "undefined" : "has wine sample"
+    },
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#registerDate",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "registerDate"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "Date of registration.",
+      "es" : "Fecha en la que se registró."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#belongsToRegion",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "belongsToRegion",
+      "undefined" : "belongs to region"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#hasNextWineFoodSample",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasNextWineFoodSample",
+      "undefined" : "has next wine food sample"
+    },
+    "domain" : "42",
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#usesWineForWineTesting",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "usesWineForWineTesting",
+      "undefined" : "uses wine for wine testing"
+    },
+    "domain" : "45",
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#perfoms",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "perfoms",
+      "undefined" : "perfoms"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#hasStand",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasStand",
+      "undefined" : "has stand"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#usesWineForTesting",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "usesWineForTesting",
+      "undefined" : "uses wine for testing"
+    },
+    "domain" : "42",
+    "attributes" : [ "object" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#associatedDOP",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "associatedDOP",
+      "undefined" : "associated d o p"
+    },
+    "domain" : "40",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "hasAcknowledgement",
+      "undefined" : "has acknowledgement"
+    },
+    "domain" : "62",
+    "attributes" : [ "external", "object" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#region",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "region"
+    },
+    "domain" : "57",
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#description",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "description"
+    },
+    "domain" : "9",
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#postalCode",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "postalCode"
+    },
+    "domain" : "38",
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#productionRule",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "55",
+    "label" : {
+      "IRI-based" : "productionRule"
+    },
+    "domain" : "19",
+    "comment" : {
+      "en" : "A summary of the specific rules for cultivation, breeding, processing, etc.",
+      "es" : "Un resumen de las reglas específicas de cultivo, cría, elaboración, etc."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#originatedFrom",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "originatedFrom",
+      "undefined" : "originated from"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#hasExperiences",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hasExperiences",
+      "undefined" : "has experiences"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#organizedBy",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "organizedBy",
+      "undefined" : "organized by"
+    },
+    "domain" : "33",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#hasMunicipality",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasMunicipality",
+      "undefined" : "has municipality"
+    },
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#visitsMuseum",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "visitsMuseum",
+      "undefined" : "visits museum"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#hasWineMuseum",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasWineMuseum",
+      "undefined" : "has wine museum"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "range" : "6",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "24",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#hasWineFoodSample",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasWineFoodSample",
+      "undefined" : "has wine food sample"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "range" : "6",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "83"
+  }, {
+    "range" : "6",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://ontologia.segittur.es/turismo/def/core#offeredBy",
+    "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "offeredBy",
+      "undefined" : "offered by"
+    },
+    "domain" : "22",
+    "attributes" : [ "external", "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#bears",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "bears",
+      "undefined" : "bears"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "88"
+  }, {
+    "range" : "26",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "24",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#hasVineyard",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "hasVineyard",
+      "undefined" : "has vineyard"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#promotesWine",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "promotesWine",
+      "undefined" : "promotes wine"
+    },
+    "domain" : "33",
+    "attributes" : [ "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#visitsVineyard",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "visitsVineyard",
+      "undefined" : "visits vineyard"
+    },
+    "domain" : "24",
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#produces",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "produces",
+      "undefined" : "produces"
+    },
+    "domain" : "21",
+    "attributes" : [ "object" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#name",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "85",
+    "attributes" : [ "datatype" ],
+    "id" : "95"
+  } ]
+}

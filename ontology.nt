@@ -1,0 +1,513 @@
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://ontologia.segittur.es/enoturismo/def/core#description> "Ampliar la ontología de SEGITTUR con una ontología de enoturismo para un trabajo en grupo de la asignatura Ingeniería Ontológica de la UPM"@es .
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://ontologia.segittur.es/enoturismo/def/core#title> "Enotourism Ontology"@en .
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://ontologia.segittur.es/enoturismo/def/core#title> "Ontología de Enoturismo"@es .
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://purl.org/dc/terms/created> "2025-11-14"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://purl.org/dc/terms/creator> "Adrián Racero Serrano" .
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://purl.org/dc/terms/creator> "Juan Manuel Cardeñosa Borrego" .
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://purl.org/dc/terms/description> "Extend the SEGITTUR ontology with a enotourism ontology for a group project in the UPM's Ontological Engineering course."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://ontologia.segittur.es/enoturismo/def/core#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<http://ontologia.segittur.es/enoturismo/def/core#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#description
+<http://ontologia.segittur.es/enoturismo/def/core#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#title
+<http://ontologia.segittur.es/enoturismo/def/core#title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#associatedDOP
+<http://ontologia.segittur.es/enoturismo/def/core#associatedDOP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#associatedDOP> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineRoute> .
+<http://ontologia.segittur.es/enoturismo/def/core#associatedDOP> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#DOP> .
+<http://ontologia.segittur.es/enoturismo/def/core#associatedDOP> <http://www.w3.org/2000/01/rdf-schema#label> "associated d o p" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#bears
+<http://ontologia.segittur.es/enoturismo/def/core#bears> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#bears> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://ontologia.segittur.es/enoturismo/def/core#bears> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#Role> .
+<http://ontologia.segittur.es/enoturismo/def/core#bears> <http://www.w3.org/2000/01/rdf-schema#label> "bears" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#belongsTo
+<http://ontologia.segittur.es/enoturismo/def/core#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core#Winery> .
+<http://ontologia.segittur.es/enoturismo/def/core#belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#WineRoute> .
+<http://ontologia.segittur.es/enoturismo/def/core#belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#belongsToRegion
+<http://ontologia.segittur.es/enoturismo/def/core#belongsToRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineRoute> .
+<http://ontologia.segittur.es/enoturismo/def/core#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination> .
+<http://ontologia.segittur.es/enoturismo/def/core#belongsToRegion> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to region" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#composedOf
+<http://ontologia.segittur.es/enoturismo/def/core#composedOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#composedOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineFestival> .
+<http://ontologia.segittur.es/enoturismo/def/core#composedOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity> .
+<http://ontologia.segittur.es/enoturismo/def/core#composedOf> <http://www.w3.org/2000/01/rdf-schema#label> "composed of" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#hasExperiences
+<http://ontologia.segittur.es/enoturismo/def/core#hasExperiences> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasExperiences> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasExperiences> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasExperiences> <http://www.w3.org/2000/01/rdf-schema#label> "has experiences" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#hasMunicipality
+<http://ontologia.segittur.es/enoturismo/def/core#hasMunicipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasMunicipality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasMunicipality> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#Municipality> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasMunicipality> <http://www.w3.org/2000/01/rdf-schema#label> "has municipality" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#hasNextWineFoodSample
+<http://ontologia.segittur.es/enoturismo/def/core#hasNextWineFoodSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasNextWineFoodSample> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasNextWineFoodSample> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasNextWineFoodSample> <http://www.w3.org/2000/01/rdf-schema#label> "has next wine food sample" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#hasNextWineSample
+<http://ontologia.segittur.es/enoturismo/def/core#hasNextWineSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasNextWineSample> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineSample> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasNextWineSample> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#WineSample> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasNextWineSample> <http://www.w3.org/2000/01/rdf-schema#label> "has next wine sample" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#hasStand
+<http://ontologia.segittur.es/enoturismo/def/core#hasStand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasStand> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasStand> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#WineStall> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasStand> <http://www.w3.org/2000/01/rdf-schema#label> "has stand" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#hasVineyard
+<http://ontologia.segittur.es/enoturismo/def/core#hasVineyard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasVineyard> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core#Winery> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasVineyard> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#Vineyard> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasVineyard> <http://www.w3.org/2000/01/rdf-schema#label> "has vineyard" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#hasWineFoodSample
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineFoodSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineFoodSample> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#Tasting> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineFoodSample> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineFoodSample> <http://www.w3.org/2000/01/rdf-schema#label> "has wine food sample" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#hasWineMuseum
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineMuseum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineMuseum> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core#Winery> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineMuseum> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#WineMuseum> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineMuseum> <http://www.w3.org/2000/01/rdf-schema#label> "has wine museum" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#hasWineSample
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineSample> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineTasting> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineSample> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#WineSample> .
+<http://ontologia.segittur.es/enoturismo/def/core#hasWineSample> <http://www.w3.org/2000/01/rdf-schema#label> "has wine sample" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#organizedBy
+<http://ontologia.segittur.es/enoturismo/def/core#organizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#organizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineStall> .
+<http://ontologia.segittur.es/enoturismo/def/core#organizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Agent> .
+<http://ontologia.segittur.es/enoturismo/def/core#organizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "organized by" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#originatedFrom
+<http://ontologia.segittur.es/enoturismo/def/core#originatedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#originatedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#DOP> .
+<http://ontologia.segittur.es/enoturismo/def/core#originatedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination> .
+<http://ontologia.segittur.es/enoturismo/def/core#originatedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "originated from" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#perfoms
+<http://ontologia.segittur.es/enoturismo/def/core#perfoms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#perfoms> <http://www.w3.org/2000/01/rdf-schema#domain> <http://xmlns.com/foaf/0.1/Agent> .
+<http://ontologia.segittur.es/enoturismo/def/core#perfoms> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> .
+<http://ontologia.segittur.es/enoturismo/def/core#perfoms> <http://www.w3.org/2000/01/rdf-schema#label> "perfoms" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#produces
+<http://ontologia.segittur.es/enoturismo/def/core#produces> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#produces> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core#Winery> .
+<http://ontologia.segittur.es/enoturismo/def/core#produces> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ceu/ebaco/core#Wine> .
+<http://ontologia.segittur.es/enoturismo/def/core#produces> <http://www.w3.org/2000/01/rdf-schema#label> "produces" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#promotesWine
+<http://ontologia.segittur.es/enoturismo/def/core#promotesWine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#promotesWine> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineStall> .
+<http://ontologia.segittur.es/enoturismo/def/core#promotesWine> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ceu/ebaco/core#Wine> .
+<http://ontologia.segittur.es/enoturismo/def/core#promotesWine> <http://www.w3.org/2000/01/rdf-schema#label> "promotes wine" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#realizedBy
+<http://ontologia.segittur.es/enoturismo/def/core#realizedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#realizedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#Role> .
+<http://ontologia.segittur.es/enoturismo/def/core#realizedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> .
+<http://ontologia.segittur.es/enoturismo/def/core#realizedBy> <http://www.w3.org/2000/01/rdf-schema#label> "realized by" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#usesFood
+<http://ontologia.segittur.es/enoturismo/def/core#usesFood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#usesFood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample> .
+<http://ontologia.segittur.es/enoturismo/def/core#usesFood> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/foodon.owl#PreparedFoodProduct> .
+<http://ontologia.segittur.es/enoturismo/def/core#usesFood> <http://www.w3.org/2000/01/rdf-schema#label> "uses food" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#usesWineForTesting
+<http://ontologia.segittur.es/enoturismo/def/core#usesWineForTesting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#usesWineForTesting> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample> .
+<http://ontologia.segittur.es/enoturismo/def/core#usesWineForTesting> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ceu/ebaco/core#Wine> .
+<http://ontologia.segittur.es/enoturismo/def/core#usesWineForTesting> <http://www.w3.org/2000/01/rdf-schema#label> "uses wine for testing" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#usesWineForWineTesting
+<http://ontologia.segittur.es/enoturismo/def/core#usesWineForWineTesting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#usesWineForWineTesting> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineSample> .
+<http://ontologia.segittur.es/enoturismo/def/core#usesWineForWineTesting> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ceu/ebaco/core#Wine> .
+<http://ontologia.segittur.es/enoturismo/def/core#usesWineForWineTesting> <http://www.w3.org/2000/01/rdf-schema#label> "uses wine for wine testing" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#visitsMuseum
+<http://ontologia.segittur.es/enoturismo/def/core#visitsMuseum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#visitsMuseum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit> .
+<http://ontologia.segittur.es/enoturismo/def/core#visitsMuseum> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologia.segittur.es/enoturismo/def/core#WineMuseum> .
+<http://ontologia.segittur.es/enoturismo/def/core#visitsMuseum> <http://www.w3.org/2000/01/rdf-schema#label> "visits museum" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#visitsVineyard
+<http://ontologia.segittur.es/enoturismo/def/core#visitsVineyard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#visitsVineyard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit> .
+<http://ontologia.segittur.es/enoturismo/def/core#visitsVineyard> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#Vineyard> .
+<http://ontologia.segittur.es/enoturismo/def/core#visitsVineyard> <http://www.w3.org/2000/01/rdf-schema#label> "visits vineyard" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement
+<https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ceu/ebaco/core#Wine> .
+<https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#Acknowledgement> .
+<https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement> <http://www.w3.org/2000/01/rdf-schema#label> "has acknowledgement" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#offeredBy
+<https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> .
+<https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#Event> .
+<https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "offered by" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#offers
+<https://ontologia.segittur.es/turismo/def/core#offers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://ontologia.segittur.es/turismo/def/core#offers> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core#AgritourismFacility> .
+<https://ontologia.segittur.es/turismo/def/core#offers> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> .
+<https://ontologia.segittur.es/turismo/def/core#offers> <http://www.w3.org/2000/01/rdf-schema#label> "offers" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#description
+<http://ontologia.segittur.es/enoturismo/def/core#description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#Role> .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#id
+<http://ontologia.segittur.es/enoturismo/def/core#id> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#id> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#WineStall> .
+<http://ontologia.segittur.es/enoturismo/def/core#id> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#name
+<http://ontologia.segittur.es/enoturismo/def/core#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#name> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#WineStall> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#WineRoute> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#Role> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#Municipality> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#DOP> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#postalCode
+<http://ontologia.segittur.es/enoturismo/def/core#postalCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#postalCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#Municipality> .
+<http://ontologia.segittur.es/enoturismo/def/core#postalCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#productionRule
+<http://ontologia.segittur.es/enoturismo/def/core#productionRule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#productionRule> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#DOP> .
+<http://ontologia.segittur.es/enoturismo/def/core#productionRule> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologia.segittur.es/enoturismo/def/core#productionRule> <http://www.w3.org/2000/01/rdf-schema#comment> "A summary of the specific rules for cultivation, breeding, processing, etc."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#productionRule> <http://www.w3.org/2000/01/rdf-schema#comment> "Un resumen de las reglas específicas de cultivo, cría, elaboración, etc."@es .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#region
+<http://ontologia.segittur.es/enoturismo/def/core#region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#region> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#WineRoute> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#DOP> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#region> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#registerDate
+<http://ontologia.segittur.es/enoturismo/def/core#registerDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#registerDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#DOP> .
+<http://ontologia.segittur.es/enoturismo/def/core#registerDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://ontologia.segittur.es/enoturismo/def/core#registerDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Date of registration."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#registerDate> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que se registró."@es .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#regulatoryCouncil
+<http://ontologia.segittur.es/enoturismo/def/core#regulatoryCouncil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologia.segittur.es/enoturismo/def/core#regulatoryCouncil> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologia.segittur.es/enoturismo/def/core#DOP> .
+<http://ontologia.segittur.es/enoturismo/def/core#regulatoryCouncil> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologia.segittur.es/enoturismo/def/core#regulatoryCouncil> <http://www.w3.org/2000/01/rdf-schema#comment> "Nombre del Consejo Regulador."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#regulatoryCouncil> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the Regulatory Council." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#DOP
+<http://ontologia.segittur.es/enoturismo/def/core#DOP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#DOP> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#Certification> .
+<http://ontologia.segittur.es/enoturismo/def/core#DOP> <http://www.w3.org/2000/01/rdf-schema#comment> "Officially recognized geographical area where wine production and processing are regulated to ensure origin and quality."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#DOP> <http://www.w3.org/2000/01/rdf-schema#comment> "Zona geográfica reconocida oficialmente donde la producción y elaboración del vino están reguladas para garantizar su origen y calidad."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#DOP> <http://www.w3.org/2000/01/rdf-schema#label> "D O P" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination
+<http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#TourismDestination> .
+<http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar o región que ofrece experiencias turísticas vinculadas a la cultura, producción y disfrute del vino."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination> <http://www.w3.org/2000/01/rdf-schema#comment> "Place or region offering tourist experiences related to the culture, production, and enjoyment of wine."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination> <http://www.w3.org/2000/01/rdf-schema#label> "Enotourism Destination" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#Municipality
+<http://ontologia.segittur.es/enoturismo/def/core#Municipality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#Municipality> <http://www.w3.org/2000/01/rdf-schema#comment> "Geographical area encompassing a local community."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#Municipality> <http://www.w3.org/2000/01/rdf-schema#comment> "Área geográfica que abarca una comunidad local."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#Municipality> <http://www.w3.org/2000/01/rdf-schema#label> "Municipality" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit
+<http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> .
+<http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit> <http://www.w3.org/2000/01/rdf-schema#comment> "Experiencia turística que consiste en la visita a un museo relacionado con la cultura, historia o patrimonio del vino."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit> <http://www.w3.org/2000/01/rdf-schema#comment> "Tourist experience involving a visit to a museum related to wine culture, history, or heritage."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit> <http://www.w3.org/2000/01/rdf-schema#label> "Museum Visit" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#Role
+<http://ontologia.segittur.es/enoturismo/def/core#Role> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#Role> <http://www.w3.org/2000/01/rdf-schema#label> "Role" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#Tasting
+<http://ontologia.segittur.es/enoturismo/def/core#Tasting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#Tasting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> .
+<http://ontologia.segittur.es/enoturismo/def/core#Tasting> <http://www.w3.org/2000/01/rdf-schema#comment> "Experiencia gastronómica que combina vino y comida para resaltar y equilibrar sus sabores y aromas."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#Tasting> <http://www.w3.org/2000/01/rdf-schema#comment> "Gastronomic experience that pairs wine and food to highlight and balance their flavors and aromas."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#Tasting> <http://www.w3.org/2000/01/rdf-schema#label> "Tasting" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit
+<http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> .
+<http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad turística que consiste en recorrer viñedos para conocer el cultivo de la vid y el entorno de producción del vino."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit> <http://www.w3.org/2000/01/rdf-schema#comment> "Tourist activity involving a tour of vineyards to learn about grape cultivation and the wine production environment."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit> <http://www.w3.org/2000/01/rdf-schema#label> "Vineyard Visit" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#WineFestival
+<http://ontologia.segittur.es/enoturismo/def/core#WineFestival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFestival> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#Event> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFestival> <http://www.w3.org/2000/01/rdf-schema#comment> "Evento público que celebra la cultura del vino mediante degustaciones, actividades culturales y encuentros sociales."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFestival> <http://www.w3.org/2000/01/rdf-schema#comment> "Public event celebrating wine culture through tastings, cultural activities, and social gatherings."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFestival> <http://www.w3.org/2000/01/rdf-schema#label> "Wine Festival" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity
+<http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Acción o evento específico que forma parte de un festival del vino y que promueve la participación y el disfrute en torno al vino."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific action or event within a wine festival that promotes participation and enjoyment centered around wine."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Wine Festival Activity" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample
+<http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample> <http://www.w3.org/2000/01/rdf-schema#comment> "Pequeña ración de vino y alimento ofrecida conjuntamente para degustar y apreciar su combinación de sabores."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample> <http://www.w3.org/2000/01/rdf-schema#comment> "Small serving of wine and food offered together to taste and appreciate their combination of flavors."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample> <http://www.w3.org/2000/01/rdf-schema#label> "Wine Food Sample" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#WineMuseum
+<http://ontologia.segittur.es/enoturismo/def/core#WineMuseum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineMuseum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#AgritourismFacility> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineMuseum> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#Museum> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineMuseum> <http://www.w3.org/2000/01/rdf-schema#comment> "Espacio expositivo dedicado a la conservación y divulgación de la historia, cultura y patrimonio del vino."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#WineMuseum> <http://www.w3.org/2000/01/rdf-schema#comment> "Exhibition space dedicated to preserving and promoting the history, culture, and heritage of wine."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#WineMuseum> <http://www.w3.org/2000/01/rdf-schema#label> "Wine Museum" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#WineRoute
+<http://ontologia.segittur.es/enoturismo/def/core#WineRoute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Conjunto de bodegas y servicios que forman parte de una zona vitivinícola."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#WineRoute> <http://www.w3.org/2000/01/rdf-schema#comment> "Group of wineries and services that are part of a wine-producing area."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#WineRoute> <http://www.w3.org/2000/01/rdf-schema#label> "Wine Route" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#WineSample
+<http://ontologia.segittur.es/enoturismo/def/core#WineSample> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineSample> <http://www.w3.org/2000/01/rdf-schema#comment> "Pequeña cantidad de vino ofrecida para degustar y evaluar sus características sensoriales."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#WineSample> <http://www.w3.org/2000/01/rdf-schema#comment> "Small amount of wine offered for tasting and evaluating its sensory characteristics."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#WineSample> <http://www.w3.org/2000/01/rdf-schema#label> "Wine Sample" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#WineStall
+<http://ontologia.segittur.es/enoturismo/def/core#WineStall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineStall> <http://www.w3.org/2000/01/rdf-schema#comment> "Booth or stand where wines are offered for tasting or sale during events or festivals."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#WineStall> <http://www.w3.org/2000/01/rdf-schema#comment> "Puesto o stand donde se ofrecen vinos para degustación o venta durante eventos o festivales."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#WineStall> <http://www.w3.org/2000/01/rdf-schema#label> "Wine Stall" .
+# 
+# http://ontologia.segittur.es/enoturismo/def/core#WineTasting
+<http://ontologia.segittur.es/enoturismo/def/core#WineTasting> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineTasting> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> .
+<http://ontologia.segittur.es/enoturismo/def/core#WineTasting> <http://www.w3.org/2000/01/rdf-schema#comment> "Actividad en la que los participantes degustan distintos vinos para analizar sus propiedades sensoriales y de calidad."@es .
+<http://ontologia.segittur.es/enoturismo/def/core#WineTasting> <http://www.w3.org/2000/01/rdf-schema#comment> "Activity in which participants taste different wines to analyze their sensory properties and quality."@en .
+<http://ontologia.segittur.es/enoturismo/def/core#WineTasting> <http://www.w3.org/2000/01/rdf-schema#label> "Wine Tasting" .
+# 
+# http://purl.obolibrary.org/obo/foodon.owl#PreparedFoodProduct
+<http://purl.obolibrary.org/obo/foodon.owl#PreparedFoodProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.obolibrary.org/obo/foodon.owl#PreparedFoodProduct> <http://www.w3.org/2000/01/rdf-schema#label> "Prepared Food Product" .
+# 
+# http://purl.org/ceu/ebaco/core#Wine
+<http://purl.org/ceu/ebaco/core#Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ceu/ebaco/core#Wine> <http://www.w3.org/2000/01/rdf-schema#label> "Wine" .
+# 
+# http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#Acknowledgement
+<https://ontologia.segittur.es/turismo/def/core#Acknowledgement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#Acknowledgement> <http://www.w3.org/2000/01/rdf-schema#label> "Acknowledgement" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#AgritourismExperience
+<https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> <http://www.w3.org/2000/01/rdf-schema#label> "Agritourism Experience" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#AgritourismFacility
+<https://ontologia.segittur.es/turismo/def/core#AgritourismFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#AgritourismFacility> <http://www.w3.org/2000/01/rdf-schema#label> "Agritourism Facility" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#Certification
+<https://ontologia.segittur.es/turismo/def/core#Certification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#Certification> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#Acknowledgement> .
+<https://ontologia.segittur.es/turismo/def/core#Certification> <http://www.w3.org/2000/01/rdf-schema#label> "Certification" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#Event
+<https://ontologia.segittur.es/turismo/def/core#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany
+<https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> <http://www.w3.org/2000/01/rdf-schema#label> "Event Organisation Company" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#Museum
+<https://ontologia.segittur.es/turismo/def/core#Museum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#Museum> <http://www.w3.org/2000/01/rdf-schema#label> "Museum" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#Rating
+<https://ontologia.segittur.es/turismo/def/core#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#Acknowledgement> .
+<https://ontologia.segittur.es/turismo/def/core#Rating> <http://www.w3.org/2000/01/rdf-schema#label> "Rating" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#TourismDestination
+<https://ontologia.segittur.es/turismo/def/core#TourismDestination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#TourismDestination> <http://www.w3.org/2000/01/rdf-schema#label> "Tourism Destination" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#TourismOrganisation
+<https://ontologia.segittur.es/turismo/def/core#TourismOrganisation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#TourismOrganisation> <http://www.w3.org/2000/01/rdf-schema#label> "Tourism Organisation" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#Vineyard
+<https://ontologia.segittur.es/turismo/def/core#Vineyard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#Vineyard> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#AgritourismFacility> .
+<https://ontologia.segittur.es/turismo/def/core#Vineyard> <http://www.w3.org/2000/01/rdf-schema#comment> "Land dedicated to the cultivation of grapevines for the production of wine grapes."@en .
+<https://ontologia.segittur.es/turismo/def/core#Vineyard> <http://www.w3.org/2000/01/rdf-schema#comment> "Terreno dedicado al cultivo de vides destinado a la producción de uvas para la elaboración de vino."@es .
+<https://ontologia.segittur.es/turismo/def/core#Vineyard> <http://www.w3.org/2000/01/rdf-schema#label> "Vineyard" .
+# 
+# https://ontologia.segittur.es/turismo/def/core#Winery
+<https://ontologia.segittur.es/turismo/def/core#Winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://ontologia.segittur.es/turismo/def/core#Winery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> .
+<https://ontologia.segittur.es/turismo/def/core#Winery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://ontologia.segittur.es/turismo/def/core#TourismOrganisation> .
+<https://ontologia.segittur.es/turismo/def/core#Winery> <http://www.w3.org/2000/01/rdf-schema#comment> "Establecimiento donde se elaboran, almacenan y, a menudo, se ofrecen vinos para degustación o venta."@es .
+<https://ontologia.segittur.es/turismo/def/core#Winery> <http://www.w3.org/2000/01/rdf-schema#comment> "Facility where wines are produced, stored, and often offered for tasting or sale."@en .
+<https://ontologia.segittur.es/turismo/def/core#Winery> <http://www.w3.org/2000/01/rdf-schema#label> "Winery" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid10 <http://www.w3.org/2002/07/owl#members> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#WineTasting> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#Tasting> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

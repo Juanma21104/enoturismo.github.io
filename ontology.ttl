@@ -1,0 +1,547 @@
+@prefix : <http://ontologia.segittur.es/enoturismo/def/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ontologia.segittur.es/enoturismo/def/core#> .
+
+<http://ontologia.segittur.es/enoturismo/def/core#> rdf:type owl:Ontology ;
+                                                     :description "Ampliar la ontología de SEGITTUR con una ontología de enoturismo para un trabajo en grupo de la asignatura Ingeniería Ontológica de la UPM"@es ;
+                                                     :title "Enotourism Ontology"@en ,
+                                                            "Ontología de Enoturismo"@es ;
+                                                     <http://purl.org/dc/terms/created> "2025-11-14"^^xsd:date ;
+                                                     <http://purl.org/dc/terms/creator> "Adrián Racero Serrano" ,
+                                                                                        "Juan Manuel Cardeñosa Borrego" ;
+                                                     <http://purl.org/dc/terms/description> "Extend the SEGITTUR ontology with a enotourism ontology for a group project in the UPM's Ontological Engineering course."@en ;
+                                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                     owl:versionInfo "1.0" ;
+                                                     <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://ontologia.segittur.es/enoturismo/def/core#description
+:description rdf:type owl:AnnotationProperty ;
+             rdfs:range xsd:string .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#title
+:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ontologia.segittur.es/enoturismo/def/core#associatedDOP
+:associatedDOP rdf:type owl:ObjectProperty ;
+               rdfs:domain :WineRoute ;
+               rdfs:range :DOP ;
+               rdfs:label "associated d o p" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#bears
+:bears rdf:type owl:ObjectProperty ;
+       rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+       rdfs:range :Role ;
+       rdfs:label "bears" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           rdfs:domain <https://ontologia.segittur.es/turismo/def/core#Winery> ;
+           rdfs:range :WineRoute ;
+           rdfs:label "belongs to" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#belongsToRegion
+:belongsToRegion rdf:type owl:ObjectProperty ;
+                 rdfs:domain :WineRoute ;
+                 rdfs:range :EnotourismDestination ;
+                 rdfs:label "belongs to region" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#composedOf
+:composedOf rdf:type owl:ObjectProperty ;
+            rdfs:domain :WineFestival ;
+            rdfs:range :WineFestivalActivity ;
+            rdfs:label "composed of" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#hasExperiences
+:hasExperiences rdf:type owl:ObjectProperty ;
+                rdfs:domain :WineFestivalActivity ;
+                rdfs:range <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> ;
+                rdfs:label "has experiences" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#hasMunicipality
+:hasMunicipality rdf:type owl:ObjectProperty ;
+                 rdfs:domain :EnotourismDestination ;
+                 rdfs:range :Municipality ;
+                 rdfs:label "has municipality" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#hasNextWineFoodSample
+:hasNextWineFoodSample rdf:type owl:ObjectProperty ;
+                       rdfs:domain :WineFoodSample ;
+                       rdfs:range :WineFoodSample ;
+                       rdfs:label "has next wine food sample" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#hasNextWineSample
+:hasNextWineSample rdf:type owl:ObjectProperty ;
+                   rdfs:domain :WineSample ;
+                   rdfs:range :WineSample ;
+                   rdfs:label "has next wine sample" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#hasStand
+:hasStand rdf:type owl:ObjectProperty ;
+          rdfs:domain :WineFestivalActivity ;
+          rdfs:range :WineStall ;
+          rdfs:label "has stand" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#hasVineyard
+:hasVineyard rdf:type owl:ObjectProperty ;
+             rdfs:domain <https://ontologia.segittur.es/turismo/def/core#Winery> ;
+             rdfs:range <https://ontologia.segittur.es/turismo/def/core#Vineyard> ;
+             rdfs:label "has vineyard" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#hasWineFoodSample
+:hasWineFoodSample rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Tasting ;
+                   rdfs:range :WineFoodSample ;
+                   rdfs:label "has wine food sample" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#hasWineMuseum
+:hasWineMuseum rdf:type owl:ObjectProperty ;
+               rdfs:domain <https://ontologia.segittur.es/turismo/def/core#Winery> ;
+               rdfs:range :WineMuseum ;
+               rdfs:label "has wine museum" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#hasWineSample
+:hasWineSample rdf:type owl:ObjectProperty ;
+               rdfs:domain :WineTasting ;
+               rdfs:range :WineSample ;
+               rdfs:label "has wine sample" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#organizedBy
+:organizedBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :WineStall ;
+             rdfs:range <http://xmlns.com/foaf/0.1/Agent> ;
+             rdfs:label "organized by" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#originatedFrom
+:originatedFrom rdf:type owl:ObjectProperty ;
+                rdfs:domain :DOP ;
+                rdfs:range :EnotourismDestination ;
+                rdfs:label "originated from" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#perfoms
+:perfoms rdf:type owl:ObjectProperty ;
+         rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+         rdfs:range <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> ;
+         rdfs:label "perfoms" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#produces
+:produces rdf:type owl:ObjectProperty ;
+          rdfs:domain <https://ontologia.segittur.es/turismo/def/core#Winery> ;
+          rdfs:range <http://purl.org/ceu/ebaco/core#Wine> ;
+          rdfs:label "produces" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#promotesWine
+:promotesWine rdf:type owl:ObjectProperty ;
+              rdfs:domain :WineStall ;
+              rdfs:range <http://purl.org/ceu/ebaco/core#Wine> ;
+              rdfs:label "promotes wine" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#realizedBy
+:realizedBy rdf:type owl:ObjectProperty ;
+            rdfs:domain :Role ;
+            rdfs:range <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> ;
+            rdfs:label "realized by" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#usesFood
+:usesFood rdf:type owl:ObjectProperty ;
+          rdfs:domain :WineFoodSample ;
+          rdfs:range <http://purl.obolibrary.org/obo/foodon.owl#PreparedFoodProduct> ;
+          rdfs:label "uses food" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#usesWineForTesting
+:usesWineForTesting rdf:type owl:ObjectProperty ;
+                    rdfs:domain :WineFoodSample ;
+                    rdfs:range <http://purl.org/ceu/ebaco/core#Wine> ;
+                    rdfs:label "uses wine for testing" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#usesWineForWineTesting
+:usesWineForWineTesting rdf:type owl:ObjectProperty ;
+                        rdfs:domain :WineSample ;
+                        rdfs:range <http://purl.org/ceu/ebaco/core#Wine> ;
+                        rdfs:label "uses wine for wine testing" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#visitsMuseum
+:visitsMuseum rdf:type owl:ObjectProperty ;
+              rdfs:domain :MuseumVisit ;
+              rdfs:range :WineMuseum ;
+              rdfs:label "visits museum" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#visitsVineyard
+:visitsVineyard rdf:type owl:ObjectProperty ;
+                rdfs:domain :VineyardVisit ;
+                rdfs:range <https://ontologia.segittur.es/turismo/def/core#Vineyard> ;
+                rdfs:label "visits vineyard" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement
+<https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement> rdf:type owl:ObjectProperty ;
+                                                                    rdfs:domain <http://purl.org/ceu/ebaco/core#Wine> ;
+                                                                    rdfs:range <https://ontologia.segittur.es/turismo/def/core#Acknowledgement> ;
+                                                                    rdfs:label "has acknowledgement" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#offeredBy
+<https://ontologia.segittur.es/turismo/def/core#offeredBy> rdf:type owl:ObjectProperty ;
+                                                           rdfs:domain <https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> ;
+                                                           rdfs:range <https://ontologia.segittur.es/turismo/def/core#Event> ;
+                                                           rdfs:label "offered by" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#offers
+<https://ontologia.segittur.es/turismo/def/core#offers> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://ontologia.segittur.es/turismo/def/core#AgritourismFacility> ;
+                                                        rdfs:range <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> ;
+                                                        rdfs:label "offers" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://ontologia.segittur.es/enoturismo/def/core#description
+:description rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Role .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#id
+:id rdf:type owl:DatatypeProperty ;
+    rdfs:domain :WineStall ;
+    rdfs:range xsd:string .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :DOP
+                                  :Municipality
+                                  :Role
+                                  :WineRoute
+                                  :WineStall
+                                )
+                  ] ;
+      rdfs:range xsd:string .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#postalCode
+:postalCode rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Municipality ;
+            rdfs:range xsd:string .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#productionRule
+:productionRule rdf:type owl:DatatypeProperty ;
+                rdfs:domain :DOP ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A summary of the specific rules for cultivation, breeding, processing, etc."@en ,
+                             "Un resumen de las reglas específicas de cultivo, cría, elaboración, etc."@es .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#region
+:region rdf:type owl:DatatypeProperty ;
+        rdfs:domain [ rdf:type owl:Class ;
+                      owl:unionOf ( :DOP
+                                    :WineRoute
+                                  )
+                    ] ;
+        rdfs:range xsd:string .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#registerDate
+:registerDate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :DOP ;
+              rdfs:range xsd:date ;
+              rdfs:comment "Date of registration."@en ,
+                           "Fecha en la que se registró."@es .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#regulatoryCouncil
+:regulatoryCouncil rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :DOP ;
+                   rdfs:range xsd:string ;
+                   rdfs:comment "Nombre del Consejo Regulador."@es ,
+                                "Name of the Regulatory Council." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ontologia.segittur.es/enoturismo/def/core#DOP
+:DOP rdf:type owl:Class ;
+     rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#Certification> ;
+     rdfs:comment "Officially recognized geographical area where wine production and processing are regulated to ensure origin and quality."@en ,
+                  "Zona geográfica reconocida oficialmente donde la producción y elaboración del vino están reguladas para garantizar su origen y calidad."@es ;
+     rdfs:label "D O P" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#EnotourismDestination
+:EnotourismDestination rdf:type owl:Class ;
+                       rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#TourismDestination> ;
+                       rdfs:comment "Lugar o región que ofrece experiencias turísticas vinculadas a la cultura, producción y disfrute del vino."@es ,
+                                    "Place or region offering tourist experiences related to the culture, production, and enjoyment of wine."@en ;
+                       rdfs:label "Enotourism Destination" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#Municipality
+:Municipality rdf:type owl:Class ;
+              rdfs:comment "Geographical area encompassing a local community."@en ,
+                           "Área geográfica que abarca una comunidad local."@es ;
+              rdfs:label "Municipality" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#MuseumVisit
+:MuseumVisit rdf:type owl:Class ;
+             rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> ;
+             rdfs:comment "Experiencia turística que consiste en la visita a un museo relacionado con la cultura, historia o patrimonio del vino."@es ,
+                          "Tourist experience involving a visit to a museum related to wine culture, history, or heritage."@en ;
+             rdfs:label "Museum Visit" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#Role
+:Role rdf:type owl:Class ;
+      rdfs:label "Role" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#Tasting
+:Tasting rdf:type owl:Class ;
+         rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> ;
+         rdfs:comment "Experiencia gastronómica que combina vino y comida para resaltar y equilibrar sus sabores y aromas."@es ,
+                      "Gastronomic experience that pairs wine and food to highlight and balance their flavors and aromas."@en ;
+         rdfs:label "Tasting" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#VineyardVisit
+:VineyardVisit rdf:type owl:Class ;
+               rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> ;
+               rdfs:comment "Actividad turística que consiste en recorrer viñedos para conocer el cultivo de la vid y el entorno de producción del vino."@es ,
+                            "Tourist activity involving a tour of vineyards to learn about grape cultivation and the wine production environment."@en ;
+               rdfs:label "Vineyard Visit" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#WineFestival
+:WineFestival rdf:type owl:Class ;
+              rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#Event> ;
+              rdfs:comment "Evento público que celebra la cultura del vino mediante degustaciones, actividades culturales y encuentros sociales."@es ,
+                           "Public event celebrating wine culture through tastings, cultural activities, and social gatherings."@en ;
+              rdfs:label "Wine Festival" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#WineFestivalActivity
+:WineFestivalActivity rdf:type owl:Class ;
+                      rdfs:comment "Acción o evento específico que forma parte de un festival del vino y que promueve la participación y el disfrute en torno al vino."@es ,
+                                   "Specific action or event within a wine festival that promotes participation and enjoyment centered around wine."@en ;
+                      rdfs:label "Wine Festival Activity" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#WineFoodSample
+:WineFoodSample rdf:type owl:Class ;
+                rdfs:comment "Pequeña ración de vino y alimento ofrecida conjuntamente para degustar y apreciar su combinación de sabores."@es ,
+                             "Small serving of wine and food offered together to taste and appreciate their combination of flavors."@en ;
+                rdfs:label "Wine Food Sample" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#WineMuseum
+:WineMuseum rdf:type owl:Class ;
+            rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#AgritourismFacility> ,
+                            <https://ontologia.segittur.es/turismo/def/core#Museum> ;
+            rdfs:comment "Espacio expositivo dedicado a la conservación y divulgación de la historia, cultura y patrimonio del vino."@es ,
+                         "Exhibition space dedicated to preserving and promoting the history, culture, and heritage of wine."@en ;
+            rdfs:label "Wine Museum" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#WineRoute
+:WineRoute rdf:type owl:Class ;
+           rdfs:comment "Conjunto de bodegas y servicios que forman parte de una zona vitivinícola."@es ,
+                        "Group of wineries and services that are part of a wine-producing area."@en ;
+           rdfs:label "Wine Route" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#WineSample
+:WineSample rdf:type owl:Class ;
+            rdfs:comment "Pequeña cantidad de vino ofrecida para degustar y evaluar sus características sensoriales."@es ,
+                         "Small amount of wine offered for tasting and evaluating its sensory characteristics."@en ;
+            rdfs:label "Wine Sample" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#WineStall
+:WineStall rdf:type owl:Class ;
+           rdfs:comment "Booth or stand where wines are offered for tasting or sale during events or festivals."@en ,
+                        "Puesto o stand donde se ofrecen vinos para degustación o venta durante eventos o festivales."@es ;
+           rdfs:label "Wine Stall" .
+
+
+###  http://ontologia.segittur.es/enoturismo/def/core#WineTasting
+:WineTasting rdf:type owl:Class ;
+             rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> ;
+             rdfs:comment "Actividad en la que los participantes degustan distintos vinos para analizar sus propiedades sensoriales y de calidad."@es ,
+                          "Activity in which participants taste different wines to analyze their sensory properties and quality."@en ;
+             rdfs:label "Wine Tasting" .
+
+
+###  http://purl.obolibrary.org/obo/foodon.owl#PreparedFoodProduct
+<http://purl.obolibrary.org/obo/foodon.owl#PreparedFoodProduct> rdf:type owl:Class ;
+                                                                rdfs:label "Prepared Food Product" .
+
+
+###  http://purl.org/ceu/ebaco/core#Wine
+<http://purl.org/ceu/ebaco/core#Wine> rdf:type owl:Class ;
+                                      rdfs:label "Wine" .
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+<http://xmlns.com/foaf/0.1/Agent> rdf:type owl:Class ;
+                                  rdfs:label "Agent" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#Acknowledgement
+<https://ontologia.segittur.es/turismo/def/core#Acknowledgement> rdf:type owl:Class ;
+                                                                 rdfs:label "Acknowledgement" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#AgritourismExperience
+<https://ontologia.segittur.es/turismo/def/core#AgritourismExperience> rdf:type owl:Class ;
+                                                                       rdfs:label "Agritourism Experience" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#AgritourismFacility
+<https://ontologia.segittur.es/turismo/def/core#AgritourismFacility> rdf:type owl:Class ;
+                                                                     rdfs:label "Agritourism Facility" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#Certification
+<https://ontologia.segittur.es/turismo/def/core#Certification> rdf:type owl:Class ;
+                                                               rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#Acknowledgement> ;
+                                                               rdfs:label "Certification" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#Event
+<https://ontologia.segittur.es/turismo/def/core#Event> rdf:type owl:Class ;
+                                                       rdfs:label "Event" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany
+<https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> rdf:type owl:Class ;
+                                                                          rdfs:label "Event Organisation Company" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#Museum
+<https://ontologia.segittur.es/turismo/def/core#Museum> rdf:type owl:Class ;
+                                                        rdfs:label "Museum" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#Rating
+<https://ontologia.segittur.es/turismo/def/core#Rating> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#Acknowledgement> ;
+                                                        rdfs:label "Rating" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#TourismDestination
+<https://ontologia.segittur.es/turismo/def/core#TourismDestination> rdf:type owl:Class ;
+                                                                    rdfs:label "Tourism Destination" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#TourismOrganisation
+<https://ontologia.segittur.es/turismo/def/core#TourismOrganisation> rdf:type owl:Class ;
+                                                                     rdfs:label "Tourism Organisation" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#Vineyard
+<https://ontologia.segittur.es/turismo/def/core#Vineyard> rdf:type owl:Class ;
+                                                          rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#AgritourismFacility> ;
+                                                          rdfs:comment "Land dedicated to the cultivation of grapevines for the production of wine grapes."@en ,
+                                                                       "Terreno dedicado al cultivo de vides destinado a la producción de uvas para la elaboración de vino."@es ;
+                                                          rdfs:label "Vineyard" .
+
+
+###  https://ontologia.segittur.es/turismo/def/core#Winery
+<https://ontologia.segittur.es/turismo/def/core#Winery> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> ,
+                                                                        <https://ontologia.segittur.es/turismo/def/core#TourismOrganisation> ;
+                                                        rdfs:comment "Establecimiento donde se elaboran, almacenan y, a menudo, se ofrecen vinos para degustación o venta."@es ,
+                                                                     "Facility where wines are produced, stored, and often offered for tasting or sale."@en ;
+                                                        rdfs:label "Winery" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :MuseumVisit
+                :Tasting
+                :VineyardVisit
+                :WineTasting
+              )
+] .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
