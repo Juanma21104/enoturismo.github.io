@@ -9,5 +9,5 @@ La documentación completa está disponible en:
 
 ## Autores
 
-* **Adrián Racero Serrano**
-* **Juan Manuel Cardeñosa Borrego**
+* **[Adrián Racero Serrano](https://github.com/ferre18)**
+* **[Juan Manuel Cardeñosa Borrego](https://github.com/Juanma21104)**
