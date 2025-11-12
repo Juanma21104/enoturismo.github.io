@@ -835,13 +835,13 @@
   "@id" : "https://ontologia.segittur.es/turismo/def/core#offeredBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany"
+    "@id" : "https://ontologia.segittur.es/turismo/def/core#Event"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "offered by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://ontologia.segittur.es/turismo/def/core#Event"
+    "@id" : "https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany"
   } ]
 }, {
   "@id" : "https://ontologia.segittur.es/turismo/def/core#offers",

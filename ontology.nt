@@ -222,8 +222,8 @@
 # 
 # https://ontologia.segittur.es/turismo/def/core#offeredBy
 <https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> .
-<https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#Event> .
+<https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://ontologia.segittur.es/turismo/def/core#Event> .
+<https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> .
 <https://ontologia.segittur.es/turismo/def/core#offeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "offered by" .
 # 
 # https://ontologia.segittur.es/turismo/def/core#offers

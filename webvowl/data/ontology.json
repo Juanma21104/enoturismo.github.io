@@ -24,12 +24,12 @@
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Adrián Racero Serrano",
+        "value" : "Juan Manuel Cardeñosa Borrego",
         "type" : "label"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "Juan Manuel Cardeñosa Borrego",
+        "value" : "Adrián Racero Serrano",
         "type" : "label"
       } ],
       "createdWith" : [ {
@@ -320,7 +320,7 @@
   }, {
     "instances" : 0,
     "union" : [ "40", "19" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "57"
   }, {
     "iri" : "https://ontologia.segittur.es/turismo/def/core#Rating",
@@ -554,7 +554,7 @@
   }, {
     "instances" : 0,
     "union" : [ "38", "9", "33", "40", "19" ],
-    "attributes" : [ "anonymous", "union" ],
+    "attributes" : [ "union", "anonymous" ],
     "id" : "85"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -717,10 +717,10 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "68",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "69",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "70",
     "type" : "owl:datatypeProperty"
@@ -783,13 +783,13 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "93",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "94",
     "type" : "owl:objectProperty"
   }, {
     "id" : "95",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://ontologia.segittur.es/enoturismo/def/core#composedOf",
@@ -1054,6 +1054,16 @@
     "attributes" : [ "object" ],
     "id" : "67"
   }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#region",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "region"
+    },
+    "domain" : "57",
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
     "iri" : "https://ontologia.segittur.es/turismo/def/core#hasAcknowledgement",
     "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
     "range" : "18",
@@ -1063,16 +1073,6 @@
     },
     "domain" : "62",
     "attributes" : [ "external", "object" ],
-    "id" : "68"
-  }, {
-    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#region",
-    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
-    "range" : "56",
-    "label" : {
-      "IRI-based" : "region"
-    },
-    "domain" : "57",
-    "attributes" : [ "datatype" ],
     "id" : "69"
   }, {
     "iri" : "http://ontologia.segittur.es/enoturismo/def/core#description",
@@ -1208,12 +1208,12 @@
   }, {
     "iri" : "https://ontologia.segittur.es/turismo/def/core#offeredBy",
     "baseIri" : "https://ontologia.segittur.es/turismo/def/core",
-    "range" : "1",
+    "range" : "22",
     "label" : {
       "IRI-based" : "offeredBy",
       "undefined" : "offered by"
     },
-    "domain" : "22",
+    "domain" : "1",
     "attributes" : [ "external", "object" ],
     "id" : "87"
   }, {
@@ -1260,6 +1260,16 @@
     "attributes" : [ "object" ],
     "id" : "92"
   }, {
+    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#name",
+    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "85",
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
     "iri" : "http://ontologia.segittur.es/enoturismo/def/core#visitsVineyard",
     "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
     "range" : "12",
@@ -1269,7 +1279,7 @@
     },
     "domain" : "24",
     "attributes" : [ "object" ],
-    "id" : "93"
+    "id" : "94"
   }, {
     "iri" : "http://ontologia.segittur.es/enoturismo/def/core#produces",
     "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
@@ -1280,16 +1290,6 @@
     },
     "domain" : "21",
     "attributes" : [ "object" ],
-    "id" : "94"
-  }, {
-    "iri" : "http://ontologia.segittur.es/enoturismo/def/core#name",
-    "baseIri" : "http://ontologia.segittur.es/enoturismo/def/core",
-    "range" : "86",
-    "label" : {
-      "IRI-based" : "name"
-    },
-    "domain" : "85",
-    "attributes" : [ "datatype" ],
     "id" : "95"
   } ]
 }

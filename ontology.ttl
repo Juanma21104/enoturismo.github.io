@@ -251,8 +251,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://ontologia.segittur.es/turismo/def/core#offeredBy
 <https://ontologia.segittur.es/turismo/def/core#offeredBy> rdf:type owl:ObjectProperty ;
-                                                           rdfs:domain <https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> ;
-                                                           rdfs:range <https://ontologia.segittur.es/turismo/def/core#Event> ;
+                                                           rdfs:domain <https://ontologia.segittur.es/turismo/def/core#Event> ;
+                                                           rdfs:range <https://ontologia.segittur.es/turismo/def/core#EventOrganisationCompany> ;
                                                            rdfs:label "offered by" .
 
 
